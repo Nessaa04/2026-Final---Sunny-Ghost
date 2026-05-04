@@ -20,6 +20,8 @@ public class MonsterController : MonoBehaviour
 
     void Update()
     {
+        //make a bool for if enemy is scared it runs - of the player
+
         //If there is no player, don't chase
         if (Target == null) return;
         
