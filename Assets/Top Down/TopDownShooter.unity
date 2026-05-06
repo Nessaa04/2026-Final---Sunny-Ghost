@@ -475,6 +475,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4263063251411776512, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263063251411776512, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_Color.b
       value: 0.8490566
       objectReference: {fileID: 0}
@@ -523,6 +527,7 @@ MonoBehaviour:
   RB: {fileID: 0}
   Speed: 5
   BulletPrefab: {fileID: 0}
+  scary: 0
 --- !u!1001 &251660741636651401
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -26,11 +26,14 @@ public class MonsterController : MonoBehaviour
         if (Target == null) return;
         
         //Calculate what direction the player is in
-        Vector3 offset = Target.transform.position - transform.position;
+        Vector3 offset =  Target.transform.position - transform.position;
+        Debug.Log(offset.magnitude);
         //Normalize the direction to make it always add up to 1, then multiply it by my speed
         RB.linearVelocity = offset.normalized * Speed;
         
-        //The code for the player getting caught by me is in the PlayerMovement script
+        //Vector3 offset2 = transform.position - Target.transform.position;
+        //RB.linearVelocity = offset.normalized * Speed;
+
     }
 
     //If I get hit by a bullet. . .
