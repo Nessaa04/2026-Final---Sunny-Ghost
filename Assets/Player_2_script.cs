@@ -22,17 +22,17 @@ public class Player_2_script : MonoBehaviour
 
     private void Awake()
     {
-        //The one thing I do that's a little fancy is
+          //The one thing I do that's a little fancy is
           //I record the player to a static variable
           //so they're easy to find
-        Player2 = this;
+          Player2 = this;
 
     }
 
     void Update()
     {
         //Player 2 is scary, enemies within range becomes scared
-        
+        //Player2 = scary true;
             
 
         //You've seen this movement code before

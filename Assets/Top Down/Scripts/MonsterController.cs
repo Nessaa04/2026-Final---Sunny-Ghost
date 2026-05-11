@@ -34,6 +34,10 @@ public class MonsterController : MonoBehaviour
         //Vector3 offset2 = transform.position - Target.transform.position;
         //RB.linearVelocity = offset.normalized * Speed;
 
+        //if (Player2 = scary) true;
+        //-transform.position - Player2.transform.position;
+        
+
     }
 
     //If I get hit by a bullet. . .
