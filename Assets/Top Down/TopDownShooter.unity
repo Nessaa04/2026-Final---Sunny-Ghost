@@ -528,10 +528,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e25a463c4161f42a877b34d1e86c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  RB: {fileID: 0}
+  RB2: {fileID: 0}
   Speed: 5
   BulletPrefab: {fileID: 0}
-  scary: 0
+  scary: 1
 --- !u!1001 &251660741636651401
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class Player_2_script : MonoBehaviour
     
     public static Player_2_script Player2;
     
-    public Rigidbody2D RB;
+    public Rigidbody2D RB2;
     public float Speed = 5;
     public ProjectileController BulletPrefab;
     public bool scary;
@@ -45,7 +45,7 @@ public class Player_2_script : MonoBehaviour
             vel.y = Speed;
         else if (Input.GetKey(KeyCode.DownArrow))
             vel.y = -Speed;
-        RB.linearVelocity = vel;
+        RB2.linearVelocity = vel;
 
             //If I click, shoot!
         if (Input.GetMouseButtonDown(0))
