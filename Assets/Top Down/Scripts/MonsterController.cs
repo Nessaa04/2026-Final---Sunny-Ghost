@@ -9,9 +9,13 @@ public class MonsterController : MonoBehaviour
     //How fast do I move?
     public float Speed = 4;
 
+    public int health = 3;
     //My rigidbody
     public Rigidbody2D RB;
-    
+
+    public static Player_2_script Player2;
+    public bool scary;
+
     void Start()
     {
         //If I don't have the player assigned, use their static variable to find them
@@ -34,6 +38,7 @@ public class MonsterController : MonoBehaviour
         //Vector3 offset2 = transform.position - Target.transform.position;
         //RB.linearVelocity = offset.normalized * Speed;
 
+        //Couldn't fix this code yet;
         //if (Player2 = scary) true;
         //-transform.position - Player2.transform.position;
         
@@ -43,7 +48,13 @@ public class MonsterController : MonoBehaviour
     //If I get hit by a bullet. . .
     public void GetShot()
     {
-        //Be destroyed
-        Destroy(gameObject);
+        
+
+        if (health == 0);
+        { 
+            Destroy(gameObject);
+        }
     }
+
+
 }

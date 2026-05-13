@@ -46,5 +46,18 @@ public class Player_2_script : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow))
             vel.y = -Speed;
         RB.linearVelocity = vel;
+
+            //If I click, shoot!
+        if (Input.GetMouseButtonDown(0))
+        {
+            //Okay, but where am I aiming? Let's find out where the mouse cursor is
+            Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //This little bit of math calculates what direction the bullet should
+            //  aim to be facing at the mouse cursor. Don't sweat the details
+            float angle = Mathf.Atan2(pos.y-transform.position.y, pos.x-transform.position.x) * Mathf.Rad2Deg;
+            //Spawn the projectile where the player is, and give it a Z-rotation of the above
+            Instantiate(BulletPrefab, transform.position, Quaternion.Euler(0, 0, angle));
+        }
+
     }
 }
