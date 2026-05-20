@@ -48,7 +48,10 @@ public class MonsterController : MonoBehaviour
     //If I get hit by a bullet. . .
     public void GetShot()
     {
-        
+        if GetShot;
+        {
+            int health -1;
+        }
 
         if (health == 0);
         { 
