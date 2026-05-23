@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     
     public Rigidbody2D RB;
     public float Speed = 5;
-    public ProjectileController BulletPrefab;
 
     private void Awake()
     {
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Exit"))
         {
             //Win the game!
-            SceneManager.LoadScene("You Win");
+            SceneManager.LoadScene("WinScreen");
         }
     }
 

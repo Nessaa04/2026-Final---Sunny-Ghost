@@ -48,6 +48,8 @@ public class Player_2_script : MonoBehaviour
         RB2.linearVelocity = vel;
 
             //If I click, shoot!
+
+        //I don't know how this stopped working. . . I don't think I did anything besides copy and pasting from player one. . .
         if (Input.GetMouseButtonDown(0))
         {
             //Okay, but where am I aiming? Let's find out where the mouse cursor is

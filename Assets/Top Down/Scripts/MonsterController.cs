@@ -8,8 +8,6 @@ public class MonsterController : MonoBehaviour
     public PlayerMovement Target;
     //How fast do I move?
     public float Speed = 4;
-
-    public int health = 3;
     //My rigidbody
     public Rigidbody2D RB;
 
@@ -35,28 +33,25 @@ public class MonsterController : MonoBehaviour
         //Normalize the direction to make it always add up to 1, then multiply it by my speed
         RB.linearVelocity = offset.normalized * Speed;
         
+
+        //Trying to have the enemy go in oposite direction of player 2
+
         //Vector3 offset2 = transform.position - Target.transform.position;
         //RB.linearVelocity = offset.normalized * Speed;
 
-        //Couldn't fix this code yet;
+        //This code was hard to fix, so I tried something different;
         //if (Player2 = scary) true;
         //-transform.position - Player2.transform.position;
-        
+        //This is what I tried instead but I can't figure it out;
+        //if Player2 = Vector3 (pos 
+        //I couldn't find the reference I had for this and I couldn't remember how the code was written. . .
 
     }
 
     //If I get hit by a bullet. . .
     public void GetShot()
     {
-        if GetShot;
-        {
-            int health -1;
-        }
-
-        if (health == 0);
-        { 
-            Destroy(gameObject);
-        }
+         Destroy(gameObject);
     }
 
 
